@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchanger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+
+
+</div>
+<div class="content">
+
+
+    <div class="content_left">
+
+
+    </div>
+
+    <div class="content_center">
+
+        <div class="box_left">
+
+            <label for="usernameField" class="usernamelabel label">Amount</label>
+            <input type="number" min="0" oninput="validity.valid||(value='');" placeholder="$1.00" id="value" required="required">
+            <!-- Fix $ in number box -->
+            <div class="result">
+            <label id="result"></label>
+            </div>
+        </div>
+        <div class="box_center">
+
+
+            <label for="usernameField" class="usernamelabel label">From</label>
+            <select type="text" placeholder="Value" id="value" required="required">
+                <option value="USD">USD</option>
+                <option value="BRL">BRL</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+
+        </div>
+
+        <div class="box_right">
+            
+
+            <label for="usernameField" class="usernamelabel label">To</label>
+            <select type="text" placeholder="Value" id="value" required="required">
+                <option value="BRL">BRL</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <button onclick="fetchcoins()" class="button">
+                <span class="button-content">Convert</span>
+            </button>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="content_right">
+
+    </div>
+
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
