@@ -1,19 +1,15 @@
 body{
 padding: 0;
 margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
 background-color: #131417;
 }
 .header {
 
-    width: 100%;
-    height: 15vh;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    
 }
 .content{
     width: 100%;
@@ -44,7 +40,6 @@ background-color: #131417;
     width: 70vw;
     height: 50vh;
     border-radius: 25px;
-    margin-bottom: 10%;
   
 }
 .content_right {
@@ -74,13 +69,7 @@ height: 10vh;
 
 }
 
-.result{
-  padding-bottom: 10px;
-  background: #131417;
-  color: #fff;
-  border: none;
 
-}
 
 /*BTN*/
 
@@ -125,7 +114,21 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/*BTN*/
+.result{
+  margin-top: 7vh;
+  height: 5vh;
+  width: 10vw;
+  border-radius: 15px;
+  background: #131417;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .button {
   margin-top: 7vh;

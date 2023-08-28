@@ -23,11 +23,12 @@
 
         <div class="box_left">
 
+
             <label for="usernameField" class="usernamelabel label">Amount</label>
             <input type="number" min="0" oninput="validity.valid||(value='');" placeholder="$1.00" id="value" required="required">
             <!-- Fix $ in number box -->
             <div class="result">
-            <label id="result"></label>
+                <span class="result_content" id="result"></span>
             </div>
         </div>
         <div class="box_center">
