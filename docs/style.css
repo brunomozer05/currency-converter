@@ -1,5 +1,5 @@
-
   @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+  
 body{
     font-family: 'Libre Franklin', sans-serif;
     padding: 0;
@@ -42,7 +42,7 @@ body{
         background-color: #191A20;
         width: 70vw;
         height: 50vh;
-        border-radius: 25px;
+        border-radius: 15px;
       
     }
     .content_right {
@@ -85,7 +85,7 @@ body{
     
     
     
-    #value {
+    #option1,#option2,#value {
         font-family: 'Libre Franklin', sans-serif;
       display: block;
       width: 10vw;
@@ -101,15 +101,13 @@ body{
       transition-duration: .2s;
     }
     
-    #value:focus,
-    #value:valid {
+    #option1,#option2,#value:focus,
+    #option1,#option2,#value:valid {
         font-family: 'Libre Franklin', sans-serif;  
       border: 2px solid rgb(152, 88, 255);
       transition-duration: .2s;
     }
-    
-    
-    
+
     
     
     /* Chrome, Safari, Edge, Opera */

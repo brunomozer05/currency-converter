@@ -9,16 +9,13 @@
 <body>
 <div class="header">
 
-
 </div>
 <div class="content">
-
 
     <div class="content_left">
 
 
     </div>
-
     <div class="content_center">
 
         <div class="box_left">
@@ -26,7 +23,7 @@
 
             <label for="usernameField" class="usernamelabel label">Amount</label>
             <input type="number" min="0" oninput="validity.valid||(value='');" placeholder="$1.00" id="value" required="required">
-            <!-- Fix $ in number box -->
+            <!-- Fix Placeholder $ in number box -->
             <div class="result">
                 <span class="result_content" id="result"></span>
             </div>
@@ -35,20 +32,22 @@
 
 
             <label for="usernameField" class="usernamelabel label">From</label>
-            <select type="text" placeholder="Value" id="value" required="required">
-                <option value="USD">USD</option>
-                <option value="BRL">BRL</option>
-                <option value="EUR">EUR</option>
+            <select type="text" placeholder="Value" id="option1" required="required">
+                <option id="USD" value="USD">USD</option>
+                <option id="BRL" value="BRL">BRL</option>
+                <option id="EUR" value="EUR">EUR</option>
             </select>
 
+            
 
         </div>
+        
 
         <div class="box_right">
             
 
             <label for="usernameField" class="usernamelabel label">To</label>
-            <select type="text" placeholder="Value" id="value" required="required">
+            <select type="text" placeholder="Value" id="option2" required="required">
                 <option value="BRL">BRL</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
