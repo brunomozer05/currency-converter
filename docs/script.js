@@ -11,16 +11,19 @@ const fetchcoins = async () => {
     
     const coins1 = (selectedOption1.value)
     const coins2 = (selectedOption2.value)
+    
+    let currency = 1
 
-    const currency = await fetch(url + coins1 + "-" + coins2)
+    if (coins1 !== coins2) {    
+        currency = await fetch(url + coins1 + "-" + coins2)
         .then(currency => currency.json())
         .then (coins => coins[coins1 + coins2].bid)
-
-    const inputValue = document.getElementById("value").value
-
-    console.log(currency)
-
-    const result = document.getElementById("result")
-    result.innerHTML = (currency * inputValue).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+    }
+        const inputValue = document.getElementById("value").value
+        
+        console.log(currency)
+        
+        const result = document.getElementById("result")
+        result.innerHTML = (currency * inputValue).toLocaleString('pt-BR', {style: 'currency', currency: coins2});
     
 }

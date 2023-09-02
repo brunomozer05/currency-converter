@@ -22,8 +22,8 @@
 
 
             <label for="usernameField" class="usernamelabel label">Amount</label>
-            <input type="number" min="0" oninput="validity.valid||(value='');" placeholder="$1.00" id="value" required="required">
-            <!-- Fix Placeholder $ in number box -->
+            <input type="number" placeholder="" id="value" required="required">
+
             <div class="result">
                 <span class="result_content" id="result"></span>
             </div>
@@ -36,6 +36,15 @@
                 <option id="USD" value="USD">USD</option>
                 <option id="BRL" value="BRL">BRL</option>
                 <option id="EUR" value="EUR">EUR</option>
+                <option id="BTC" value="BTC">BTC</option>
+                <option id="ETH" value="ETH">ETH</option>
+                <option id="LTC" value="LTC">LTC</option>
+                <option id="PYG" value="PYG">PYG</option>
+                <option id="ARS" value="ARS">ARS</option>
+                <option id="VEF" value="VEF">VEF</option>
+                <option id="JPY" value="JPY">JPY</option>
+                <option id="CNY" value="CNY">CNY</option>
+                <option id="RUB" value="RUB">RUB</option>
             </select>
 
             
@@ -48,9 +57,15 @@
 
             <label for="usernameField" class="usernamelabel label">To</label>
             <select type="text" placeholder="Value" id="option2" required="required">
-                <option value="BRL">BRL</option>
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
+                <option id="BRL" value="BRL">BRL</option>
+                <option id="USD" value="USD">USD</option>
+                <option id="EUR" value="EUR">EUR</option>
+                <option id="PYG" value="PYG">PYG</option>
+                <option id="ARS" value="ARS">ARS</option>
+                <option id="VEF" value="VEF">VEF</option>
+                <option id="JPY" value="JPY">JPY</option>
+                <option id="CNY" value="CNY">CNY</option>
+                <option id="RUB" value="RUB">RUB</option>
             </select>
 
             <button onclick="fetchcoins()" class="button">
