@@ -11,9 +11,15 @@ body{
     
     background-color: #131417;
     }
-    .header {
-    
-    }
+
+.teste{
+
+width: 50px;
+height: 50px;
+transform: scaleX(-1);
+
+}
+
     .content{
         width: 100%;
         height: 85vh;
@@ -133,7 +139,7 @@ body{
     .result{
       margin-top: 7vh;
       height: 5vh;
-      width: 10vw;
+      width: 14vw;
       border-radius: 15px;
       background: #131417;
       background-size: 400%;
@@ -362,7 +368,7 @@ body{
     #option1,#option2,#value {
         font-family: 'Libre Franklin', sans-serif;
       display: block;
-      width: 15vw;
+      width: 11vw;
       height: 5vh;
       background-color: #131417;
       border-radius: 15px;
@@ -637,7 +643,7 @@ body{
     #option1,#option2,#value {
         font-family: 'Libre Franklin', sans-serif;
       display: block;
-      width: 14vw;
+      width: 8vw;
       height: 5vh;
       background-color: #131417;
       border-radius: 15px;
