@@ -136,6 +136,7 @@ input::-webkit-inner-spin-button {
 }
 
 .button {
+  cursor: pointer;
   font-family: "Libre Franklin", sans-serif;
   margin-top: 7vh;
   position: relative;
